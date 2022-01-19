@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Recommendation</title>  
-</head>
+    <title>Recommendation</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js">  
     </script>  
     
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js">  
-    </script>
+    </script>  
+    
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css"
-        rel="stylesheet" type="text/css"/> 
+        rel="stylesheet" type="text/css"/>  
+</head>
    <body>
         <form action="{{ url_for('main') }}" method="POST">
             <div class="div1">
-            <h1 style="background-color:hsl(33, 36%, 55%);">Find Your Similar Hotel in Yogyakarta</h1>
+            <h1 style="background-color:#686868;">Find Your Similar Hotel in Yogyakarta</h1>
             </div>
             <div class="div2">
                     <h3 >We work to help you in choosing hotels by providing 10 similar hotel recommendations.</h3>
-         <p> Input your hotel's name here <label>
+         <p> <span> Input your hotel's name here </span> &nbsp; <label>
              <input type = "text" id="daftarhotel" name="daftarhotel" />
              <script>
                 $( function() {
@@ -45,7 +46,7 @@
   color: #000;
   margin: 150px 350px;
   background-size: 1370px 700px;
-  background-image: url({{ url_for('static', filename='img6.jpeg') }})
+  background-image: url({{ url_for('static', filename='img7.jpg') }})
 }
     .div1{
     color: white;
@@ -53,13 +54,13 @@
     text-align: center;
     }
     .div2 {
-    color: white;
+    color: black;
     width: 500px;
     margin: auto;
     text-align: center;
    }
-   script {
-    color: white;
+   span {
+    background-color: #686868;
    }
    </style>
 </html>
