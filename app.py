@@ -8,7 +8,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__, template_folder='templates')
 
-hotel = pd.read_csv("lemmatization.csv", header=0)
+hotel = pd.read_csv("datafix.csv", header=0)
 from sklearn.feature_extraction.text import CountVectorizer
 count_vectorizer= CountVectorizer(encoding='latin-1', ngram_range=(1,1), 
                                   tokenizer=None, analyzer='word',
